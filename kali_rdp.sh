@@ -32,21 +32,23 @@ read -p "[+] Paste Ngrok Authtoken: " CRP
 echo -e "$123\n$123\n" | sudo passwd
 rm -rf ngrok.zip > /dev/null 2>&1
 clear
-echo -e "$red╔═══════════════════════╗ $nc"
-echo -e "$red║choose ngrok region    ║"
-echo -e "$red╚═══════════════════════╝ $nc"
-echo -e "$red us -$Cyan  United States (Ohio) $nc"
-echo -e "$red eu -$Cyan  Europe (Frankfurt) $nc"
-echo -e "$red ap -$Cyan  Asia/Pacific (Singapore) $nc"
-echo -e "$red au -$Cyan  Australia (Sydney)"
-echo -e "$red sa -$Cyan  South America (Sao Paulo) $nc"
-echo -e "$red jp -$Cyan  Japan (Tokyo) $nc"
-echo -e "$red in -$Cyan  India (Mumbai) $nc"
+echo -e "$red╔═════════════════════════════════╗ $nc"
+echo -e "$red║choose ngrok region              ║"
+echo -e "$red╚═════════════════════════════════╝ $nc"
+echo -e "$red╔═════════════════════════════════╗$nc"
+echo -e "$red║ us -$Cyan  United States (Ohio)      ║$nc"
+echo -e "$red║ eu -$Cyan  Europe (Frankfurt)        ║$nc"
+echo -e "$red║ ap -$Cyan  Asia/Pacific (Singapore)  ║$nc"
+echo -e "$red║ au -$Cyan  Australia (Sydney)        ║$nc"
+echo -e "$red║ sa -$Cyan  South America (Sao Paulo) ║$nc"
+echo -e "$red║ jp -$Cyan  Japan (Tokyo)             ║$nc"
+echo -e "$red║ in -$Cyan  India (Mumbai)            ║$nc"
+echo -e "$red╚═════════════════════════════════╝$nc"
 read -p " [+] choose ngrok region: " CRP
 ./ngrok tcp --region $CRP 3388 &>/dev/null &
-echo -e "$red╔═══════════════════════╗ $nc"
-echo -e "$red║ Install RDP $nc       ║"
-echo -e "$red╚═══════════════════════╝ $nc"
+echo -e "$red╔═════════════════════════════════╗ $nc"
+echo -e "$red║ Install RDP $nc                 ║"
+echo -e "$red╚═════════════════════════════════╝ $nc"
 docker pull danielguerra/ubuntu-xrdp
 clear
 echo -e "$red╔═════════════════════════════════════════════════════════════════════════════════════════╗"
