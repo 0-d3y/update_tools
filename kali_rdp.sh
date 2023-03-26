@@ -9,6 +9,7 @@ Cafe="\033[0;33m"
 Fiuscha="\033[0;35m"
 blue="\033[1;34m"
 nc="\e[0m"
+wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 clear
 echo -e "$red░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 echo -e "$red░██╗░░██╗░█████╗░██╗░░░░░██╗░░██╗░░░██╗███████╗░"
